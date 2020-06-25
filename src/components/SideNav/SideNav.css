@@ -74,3 +74,17 @@
 
 
 }
+
+.contact {  
+    font-size: 21px;
+    margin: 8px;
+    /* padding: 12px; */
+    font-weight: 600;
+     
+    
+}
+
+.contact:hover {
+    cursor: pointer;
+    font-size: 21.5px;
+}

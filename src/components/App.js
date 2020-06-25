@@ -5,6 +5,7 @@ import { about } from './../constants/About'
 import { skills } from './../constants/Skills'
 import { projects } from './../constants/Projects'
 import { resume } from './../constants/Resume'
+import { contact } from './../constants/Contact'
 
 export class App extends Component {
   constructor(props) {
@@ -18,13 +19,14 @@ export class App extends Component {
        skills: null,
        projects: null,
        resume: null,
+       contact: null,
     }
   }
 
   componentDidMount () {
     this.setState({
       selectedSection: "about",
-      about, skills, projects, resume,
+      about, skills, projects, resume, contact,
       selectedHeading: about.heading,
       selectedQuote: about.quote
     })
@@ -46,6 +48,7 @@ export class App extends Component {
        skills = {this.state.skills}
        projects = {this.state.projects}
        resume = {this.state.resume}
+       contact = {this.state.contact}
        selectedHeading={this.state.selectedHeading}
        selectedSection={this.state.selectedSection}
        selectedQuote={this.state.selectedQuote}

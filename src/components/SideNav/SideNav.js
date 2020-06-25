@@ -17,6 +17,8 @@ const SideNav = ({ handleSectionClick }) => {
                 <p className="section-list-element" onClick={() => handleSectionClick("skills")}>Skills</p>
                 <p className="section-list-element" onClick={() => handleSectionClick("projects")}>Projects</p>
                 <p className="section-list-element" onClick={() => handleSectionClick("resume")}>Resume</p>
+                <p className="section-list-element" onClick={() => handleSectionClick("contact")}><i className="fa fa-envelope-o" aria-hidden="true"> Contact</i></p>
+                
                
             </div>
             <div className="wrapper">
@@ -26,6 +28,7 @@ const SideNav = ({ handleSectionClick }) => {
                        <li><a href="https://github.com/Rupesh0914"><i className="fa fa-github" aria-hidden="true"></i></a></li>
                        <li><a href="https://www.facebook.com/rupesh.malhotra.545/"><i className="fa fa-facebook-official" aria-hidden="true"></i></a></li>
                        <li><a href="https://twitter.com/Rupeshm17829744"><i className="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+
                    </ul>
                </div>
             </div>

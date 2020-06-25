@@ -4,8 +4,9 @@ import AboutMe from './../AboutMe/AboutMe'
 import Skills from './../Skills/Skills'
 import Projects from '../Projects/Projects'
 import Resume from '../Resume/Resume'
+import Contact from '../Contact/Contact'
 
-const SectionContainer = ({ about, projects, resume, skills, selectedHeading, selectedQuote, selectedSection }) => {
+const SectionContainer = ({ about, projects, contact, resume, skills, selectedHeading, selectedQuote, selectedSection }) => {
     return (
         <div className="section-container">
         <div className="section-heading-container">
@@ -18,7 +19,8 @@ const SectionContainer = ({ about, projects, resume, skills, selectedHeading, se
             about: <AboutMe bio={about} />,
             skills: <Skills skills={skills} />,
             projects: <Projects projects={projects} />,
-            resume: <Resume resume={resume} />
+            resume: <Resume resume={resume} />,
+            contact: <Contact contact={contact} />
 
            }[selectedSection]
         }
